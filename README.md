@@ -91,7 +91,7 @@ In `config.hcl` you can configure integration with Consul. You can provide value
 
 - `enable` - Enables Consul registration
 - `name` - Name of the service
-- `address` - Consul adrress
+- `address` - Consul address
 - `deregister_on_service_stop = true` - Enables deregistration from Consul when service is stopped
 
 Metrics
