@@ -10,7 +10,7 @@ import (
 	"github.com/fsnotify/fsnotify"
 )
 
-//Observe directory dir. If there is new file send its name by chanel
+// Observe directory dir. If a new file appears, send its name by channel
 func newFileCheck(dir string, logger *log.Logger) (newFileAlert <-chan string, err error) {
 	logging.Info(logger, fmt.Sprintf("Observing %s directory", dir))
 	watcher, err := fsnotify.NewWatcher()
